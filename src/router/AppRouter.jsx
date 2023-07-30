@@ -7,6 +7,9 @@ import Login from "../pages/Login";
 import MovieDetail from "../pages/MovieDetail";
 
 const AppRouter = () => {
+
+  const API_KEY = ""
+
   return <div>
     <Navbar />
     <Routes>

@@ -1,12 +1,55 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
+import { useParams } from "react-router-dom";
 
 const MovieDetail = () => {
+
+const API_KEY = "b1ad040c8b59ee92603839b9fbbe4adf"
+
+  const {id} = useParams()
+// const [moviedetail, setMoviedetail] = useState(null)
+
+const DETAİL_URL ="https://api.themoviedb.org/3/movie/${id}?api_key=${API_KEY}"
+
+
+
+const getData = async () => {
+
+try {
+  
+const response = await axios (`DETAIL_URL`)
+
+
+
+} catch (error) {
+  
+}
+}
+
+useEffect (() => {
+  getData()
+}, [])
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   return (
-    <div className="  bg-slate-600  w-12/12 mx-auto py-5 ">
+    <div className="container mx-auto  bg-slate-600  w-12/12 py-5 ">
       <h1 className="text-center mb-2 text-3xl">The falh</h1>
-      <div className="w-10/12 md:w-3/5 bg-red-500 mx-auto">
+      <div className="w-10/12 md:w-3/5 mx-auto">
         <div className="ratio h-[400px] ratio-16x9">
-          <iframe class="rounded-xl" src="https://www.youtube.com/embed/Y9RfhbH0GEQ?autoplay=1&amp;mute=1" title="YouTube video" allowfullscreen="" __idm_id__="32769"></iframe>
+          <iframe className="rounded-xl" src="" title="YouTube video" allowFullScreen="" __idm_id__="32769"></iframe>
         </div>
       </div>
       <div className="container flex mt-10 mx-auto justify-center">
@@ -17,6 +60,8 @@ const MovieDetail = () => {
               <h2 className="mb-3 font-medium text-lg">Overview</h2>
               <p className="text-gray-700 text-base mb-4">When his attempt to save his family inadvertently alters the future, Barry Allen becomes trapped in a reality in which General Zod has returned and there are no Super Heroes to turn to. In order to save the world that he is in and return to the future that he knows, Barry's only hope is to race for his life. But will making the ultimate sacrifice be enough to reset the universe?</p></div>
             <table className="border border-gray-500 ">
+              <tbody>
+
               <tr className="border-b-2 border-gray-500 ">
                 <td className="p-2">Release date</td>
               </tr>
@@ -29,6 +74,8 @@ const MovieDetail = () => {
               <tr className="border-b-2 border-gray-500 ">
                 <td className="p-2">Release date</td>
               </tr>
+              </tbody>
+             
             </table>
           </div>
         </div>
