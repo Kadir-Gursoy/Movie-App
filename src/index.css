@@ -68,7 +68,20 @@ body {
 .movie:hover .movie-over {
   transform: translateX(0%);
 }
-
+.ratio{
+  position: relative;
+  width: 100%;
+}
+.ratio-16x9{
+  --bs-aspect-ratio: 56.25%;
+}   
+.ratio>* {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
 .tag {
   border-radius: 5px;
   padding: 0.7rem;
@@ -117,3 +130,4 @@ body {
     transform: rotate(360deg);
   }
 }
+

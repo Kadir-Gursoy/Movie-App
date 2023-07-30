@@ -1,6 +1,8 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import Cards from "../components/Cards";
+
+
 const Main = () => {
   const [movies, setMovies] = useState()
   const [query, setQuery] = useState()

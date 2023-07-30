@@ -3,8 +3,8 @@ import { Route, Routes } from "react-router-dom";
 import Main from "../pages/Main";
 import Navbar from "../components/Navbar";
 import PrivateRoute from "./PrivateRoute";
-import MovieDetail from "../pages/MovieDetail";
 import Login from "../pages/Login";
+import MovieDetail from "../pages/MovieDetail";
 
 const AppRouter = () => {
   return <div>

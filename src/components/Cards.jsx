@@ -5,15 +5,15 @@ const Cards = ({movies}) => {
 
 
 
-  const navigae = useNavigate
+  const navigate = useNavigate()
   return (
-    <div>
+    <>
 
 
 {
           movies?.map((movie) => {
             return (
-              <div key={movie.id} className="movie flex flex-wrap justify-center" onClik={()=>navigate(`/moviedetail/${movie.id}`)} >
+              <div key={movie.id} className="movie flex flex-wrap justify-center" onClick={()=>navigate(`/moviedetail/${movie.id}`,{state:movie})} >
                 <img src={`https://image.tmdb.org/t/p/w1280${movie?.backdrop_path }`} alt="" />
                 <div className="bg-blue-700 py-5 text-white">
                   <h5>{movie?.title}</h5>
@@ -27,7 +27,7 @@ const Cards = ({movies}) => {
           })
         }
 
-    </div>
+    </>
   )
 }
 
