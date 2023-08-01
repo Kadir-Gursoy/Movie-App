@@ -5,17 +5,9 @@ const Navbar = () => {
     <header className={`flex items-center justify-center w-full bg-slate-700`}>
       <div className="container ">
         <div className="relative flex items-center justify-between -mx-4">
-          <div className="max-w-full px-4 w-60">
-            <a href="/#" className="block w-full py-5">
-              <img
-                src="https://cdn.tailgrids.com/1.0/assets/images/logo/logo.svg"
-                alt="logo"
-                className="w-full"
-              />
-            </a>
-          </div>
           <div className="flex items-center justify-between w-full px-4 ">
-            <div className="me">
+     
+            {/* <div className="me">
               <button
                 // @click="navbarOpen = !navbarOpen"
                 onClick={() => setOpen(!open)}
@@ -61,7 +53,7 @@ const Navbar = () => {
                   </ListItem>
                 </ul>
               </nav>
-            </div>
+            </div> */}
             <div className="justify-end hidden pr-16 sm:flex lg:pr-0">
               <a
                 href="/#"

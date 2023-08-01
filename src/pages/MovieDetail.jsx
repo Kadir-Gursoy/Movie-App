@@ -51,7 +51,7 @@ console.log(`https://www.youtube.com/watch?v=${moviedetail.key}`);
             <img className="lg:w-1/3 h-96 lg:h-[600px] object-cover rounded-t-lg md:rounded-none md:rounded-l-lg " src={`https://image.tmdb.org/t/p/w1280${poster_path}`} alt="" />
             <div className="p-6 flex flex-col justify-between">
               <div>
-                <h2 className="mb-3 font-medium text-lg">Overview</h2>
+                <h2 className="mb-3 font-me dium text-lg">Overview</h2>
                 <p className="text-gray-700 text-base mb-4">{overview}</p></div>
               <table className="border border-gray-500 ">
                 <tbody>
